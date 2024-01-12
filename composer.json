@@ -1,0 +1,19 @@
+{
+    "name": "fernandothedev/setup-php",
+    "description": "Leitor de .setup em php",
+    "version": "1.0.0",
+    "type": "library",
+    "autoload": {
+        "psr-4": {
+            "Fernando\\Setup\\": "src/"
+        }
+    },
+    "authors": [{
+        "name": "fernando",
+        "email": "fernandolovephp@gmail.com"
+    }],
+    "minimum-stability": "stable",
+    "require": {
+        "monolog/monolog": "*"
+    }
+}
