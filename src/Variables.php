@@ -5,7 +5,7 @@
 * Copyright 2024
 */
 
-namespace App;
+namespace Setup;
 use Monolog\Logger;
 
 class Variables {
