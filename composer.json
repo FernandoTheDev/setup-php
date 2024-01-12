@@ -1,7 +1,8 @@
 {
     "name": "fernandothedev/setup-php",
     "description": "Leitor de .setup em php",
-    "type": "project",
+    "type": "library",
+    "license": "MIT",
     "autoload": {
         "psr-4": {
             "Setup\\": "src/"
