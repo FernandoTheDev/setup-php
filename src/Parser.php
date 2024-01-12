@@ -5,8 +5,8 @@
  * Copyright 2024
  */
 
-namespace App;
-use App\Variables;
+namespace Setup;
+use Setup\Variables;
 use \Exception;
 use Monolog\Handler\StreamHandler;
 use Monolog\Logger;
