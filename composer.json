@@ -12,7 +12,7 @@
         "name": "fernando",
         "email": "fernandolovephp@gmail.com"
     }],
-    "minimum-stability": "stable",
+    "minimum-stability": "dev",
     "require": {
         "monolog/monolog": "^3.5"
     }
