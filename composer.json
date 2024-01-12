@@ -15,6 +15,6 @@
         "email": "fernandolovephp@gmail.com"
     }],
     "require": {
-        "monolog/monolog": "^3.5"
+        "monolog/monolog": "*"
     }
 }
