@@ -1,7 +1,7 @@
 {
     "name": "fernandothedev/setup-php",
     "description": "Leitor de .setup em php",
-    "version": "1.1.0",
+    "version": "1.0.0",
     "type": "library",
     "license": "MIT",
     "minimum-stability": "stable",
