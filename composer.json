@@ -1,5 +1,5 @@
 {
-    "name": "setup/php",
+    "name": "fernandothedev/setup-php",
     "description": "Leitor de .setup em php",
     "type": "project",
     "autoload": {
