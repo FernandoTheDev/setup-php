@@ -3,7 +3,7 @@
         'name' => 'fernandothedev/setup-php',
         'pretty_version' => 'dev-main',
         'version' => 'dev-main',
-        'reference' => 'cc91f3a4329513d14b0e0bdd0379b78fec67e4e8',
+        'reference' => '6735bc1588914f423f88714d5ba8f36ed5342819',
         'type' => 'library',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -13,7 +13,7 @@
         'fernandothedev/setup-php' => array(
             'pretty_version' => 'dev-main',
             'version' => 'dev-main',
-            'reference' => 'cc91f3a4329513d14b0e0bdd0379b78fec67e4e8',
+            'reference' => '6735bc1588914f423f88714d5ba8f36ed5342819',
             'type' => 'library',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
