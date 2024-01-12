@@ -1,9 +1,9 @@
 <?php return array(
     'root' => array(
         'name' => 'fernandothedev/setup-php',
-        'pretty_version' => 'dev-main',
-        'version' => 'dev-main',
-        'reference' => '6735bc1588914f423f88714d5ba8f36ed5342819',
+        'pretty_version' => '1.1.0',
+        'version' => '1.1.0.0',
+        'reference' => NULL,
         'type' => 'library',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -11,9 +11,9 @@
     ),
     'versions' => array(
         'fernandothedev/setup-php' => array(
-            'pretty_version' => 'dev-main',
-            'version' => 'dev-main',
-            'reference' => '6735bc1588914f423f88714d5ba8f36ed5342819',
+            'pretty_version' => '1.1.0',
+            'version' => '1.1.0.0',
+            'reference' => NULL,
             'type' => 'library',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),

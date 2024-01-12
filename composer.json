@@ -1,6 +1,7 @@
 {
     "name": "fernandothedev/setup-php",
     "description": "Leitor de .setup em php",
+    "version": "1.1.0",
     "type": "library",
     "license": "MIT",
     "autoload": {
@@ -13,6 +14,7 @@
         "email": "fernandolovephp@gmail.com"
     }],
     "require": {
-        "monolog/monolog": "^3.5"
+        "monolog/monolog": "^3.5",
+        "fernandothedev/setup": "^1.0.0"
     }
 }
