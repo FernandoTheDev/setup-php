@@ -1,36 +1,39 @@
-# Parser de .setup em php
+# Parser de .setup em PHP
 
 ## Como usar?
-- Carregue a classe
-```php 
+
+1. Carregue a classe:
+
+```php
 use Fernando\Setup\Parser;
 
 require_once(__DIR__ . '/../vendor/autoload.php');
 ```
 
-- Inicie a classe e carregue as variáveis
-```php 
+2. Inicie a classe e carregue as variáveis:
+
+```php
 $setup = new Parser(__DIR__);
 $setup->run();
 ```
 
-- Exemplo de uso (Contém tipagem):
-```php 
-//  Fernando
-echo $_SETUP['DEV];
+3. Exemplo de uso (contém tipagem):
 
-// String 
-var_dump($_SETUP['DEV']);
+```php
+// Exemplo de uso
+echo $_SETUP['DEV'];
 ```
 
 ## Instalação
-### Como e onde instalar o parser.
 
-- Composer 
-```shell 
+### Como e onde instalar o parser:
+
+- Usando Composer:
+```bash
 composer require fernandothedev/setup-php
 ```
-- Git clone
-```shell 
+
+- Clonando o repositório Git:
+```bash
 git clone https://github.com/fernandothedev/setup-php
 ```
