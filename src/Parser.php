@@ -1,9 +1,9 @@
 <?php
 
 /**
- * Powered by https://github.com/fernandothedev/
- * Copyright 2024
- */
+* Powered by https://github.com/fernandothedev/
+* Copyright 2024
+*/
 
 namespace Fernando\Setup;
 use Fernando\Setup\Variables;
@@ -21,15 +21,11 @@ class Parser
     protected array $contentFile;
     protected int $line = 0;
 
-    public function __construct(string $dir) {
+    public function __construct() {
         $this->logger = new Logger('setup-log');
         $handler = new StreamHandler('php://stdout', Logger::WARNING);
         $this->logger->pushHandler($handler);
         $this->variablesClass = new Variables($this->logger);
-
-        $this->scanDir($dir);
-        $this->tokenyzer();
-        $this->setGlobal();
     }
 
     private function getLine(): int
@@ -44,8 +40,7 @@ class Parser
 
     private function setGlobal(): void
     {
-        global $_SETUP;
-        $_SETUP = $this->variablesClass->getData();
+        $_GLOBALS["SETUP"] = $this->variablesClass->getData();
     }
 
     private function scanDir(string $dir): void
@@ -70,7 +65,7 @@ class Parser
                         }
                     }
                 } else {
-                    echo "Erro ao escanear o diretório: $absolutePath";
+                    $this->logger->error("Não foi possível ler o diretório: {$absolutePath}");
                 }
             }
 
@@ -112,5 +107,12 @@ class Parser
         } else {
             $this->logger->error(sprintf(self::EXPRESSION_INVALID, $dir, $this->getLine()));
         }
+    }
+    
+    public function run(string $dir): void 
+    {
+        $this->scanDir($dir);
+        $this->tokenyzer();
+        $this->setGlobal();
     }
 }
