@@ -13,8 +13,8 @@ require_once(__DIR__ . '/../vendor/autoload.php');
 2. Inicie a classe e carregue as variáveis:
 
 ```php
-$setup = new Parser(__DIR__);
-$setup->run();
+$setup = new Parser();
+$setup->run(__DIR__);
 ```
 
 3. Exemplo de uso (contém tipagem):

@@ -5,8 +5,8 @@ use Fernando\Setup\Parser;
 require_once(__DIR__ . '/../vendor/autoload.php');
 
 /* Load all files .setup existing in folders above and within this */
-$setup = new Parser(__DIR__);
-$setup->run();
+$setup = new Parser();
+$setup->run(__DIR__);
 
 /* STRING */
 var_dump($_SETUP['DEV']);
