@@ -40,7 +40,8 @@ class Parser
 
     private function setGlobal(): void
     {
-        $_GLOBALS["SETUP"] = $this->variablesClass->getData();
+        global $_SETUP;
+        $_SETUP = $this->variablesClass->getData();
     }
 
     private function scanDir(string $dir): void
@@ -108,8 +109,8 @@ class Parser
             $this->logger->error(sprintf(self::EXPRESSION_INVALID, $dir, $this->getLine()));
         }
     }
-    
-    public function run(string $dir): void 
+
+    public function run(string $dir): void
     {
         $this->scanDir($dir);
         $this->tokenyzer();
